@@ -61,37 +61,31 @@ Below is a high-level **architecture** illustrating Eva’s main components and 
 ```mermaid
 flowchart TB
     subgraph "Local Files"
-      A1(eva_personality.py) --> Eva
-      A2(eva_tools.py) --> Eva
-      A3(run.py - main) --> Eva
+      A1[eva_personality.py] -->|Defines traits| Eva
+      A2[eva_tools.py] -->|Provides tools| Eva
+      A3[run.py - main] -->|Executes core logic| Eva
     end
 
     subgraph "ChromaDB"
-      B1[chat_memory] --> Eva
-      B2[eva_knowledge] --> Eva
+      B1[chat_memory] -->|Stores interactions| Eva
+      B2[eva_knowledge] -->|Holds persistent data| Eva
     end
 
     subgraph "LLM"
-      C1[Deepseek-r1 <br/> (nexer-r1)] --> Eva
+      C1[Deepseek-r1 (nexer-r1)] -->|Processes language| Eva
     end
 
     subgraph "Real World"
-      D1[Internet: Google, IP checks, etc.] --> Eva
-      D2[System environment & commands] --> Eva
+      D1[Internet: Google, IP checks] -->|Fetches data| Eva
+      D2[System environment & commands] -->|Executes system tasks| Eva
     end
 
-    Eva(Eva AGI) -->|Reads & writes| Local Files
+    Eva[Eva AGI]
+    Eva -->|Reads & writes| Local Files
     Eva -->|Queries & Stores| ChromaDB
     Eva -->|Generates & Receives| LLM
     Eva -->|Time, Weather, Web Search| Real World
 ```
-
-In this diagram:
-
-1. **Local Files**: Provide Eva’s codebase (`run.py`), personality definitions, and tools.  
-2. **ChromaDB**: Manages persistent memory (`chat_memory`) and knowledge (`eva_knowledge`).  
-3. **LLM (Deepseek-r1: nexer-r1)**: Processes natural language queries, code modifications, and creative tasks.  
-4. **Real World**: Accesses environment data like IP location, weather, and system commands.
 
 ---
 
