@@ -1,4 +1,32 @@
-# **EVA**
+
+<!-- Banner Image -->
+<p align="center">
+  <img src="eva.webp" alt="Eva - The Self-Evolving AI Assistant" width="800">
+</p>
+
+# 🌟 **EVA - The Self-Evolving AI Assistant** 🌟
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![Langchain](https://img.shields.io/badge/Langchain-✅-brightgreen.svg)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Persistent%20Memory-orange.svg)
+![Nexer-r1](https://img.shields.io/badge/LLM-Deepseek--r1-blueviolet.svg)
+![Self-Evolving](https://img.shields.io/badge/Self--Evolving-Yes-red.svg)
+![Weather-Aware](https://img.shields.io/badge/Weather%20Detection-Enabled-blue.svg)
+![Code-Editing](https://img.shields.io/badge/Code%20Editing-Auto%20Self--Update-yellow.svg)
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS%20%7C%20Windows-lightblue.svg)
+![Status](https://img.shields.io/badge/Status-Experimental-red.svg)
+![Memory](https://img.shields.io/badge/Memory-Persistent-brightgreen.svg)
+![AI-Agent](https://img.shields.io/badge/AI%20Agent-AGI%20Prototype-purple.svg)
+![Development](https://img.shields.io/badge/Development-Active-brightgreen.svg)
+![LLM-Integration](https://img.shields.io/badge/LLM%20Integration-Deepseek%20%7C%20Nexer--r1-blue.svg)
+![Weather](https://img.shields.io/badge/Weather%20Detection-Real%20World-aware.svg)
+![Geolocation](https://img.shields.io/badge/Geolocation-IP%20Based-green.svg)
+![Tests](https://img.shields.io/badge/Tests-Automated%20Self--Check-success.svg)
+![Chat-Enabled](https://img.shields.io/badge/Chat-Terminal%20Chat%20Support-blue.svg)
+![Logging](https://img.shields.io/badge/Logging-Background%20Enabled-orange.svg)
+
+---
 
 This repository contains **Eva**, an advanced self-modifying AGI chatbot prototype built on top of the **Deepseek-r1** AI foundation model. We use a specific fine-tuned version named **nexer-r1** provided by [Nexus Erebus](https://nexus-ereb.us). Below is a comprehensive overview of how Eva operates, manages her memory, and evolves over time.
 
