@@ -61,30 +61,30 @@ Below is a high-level **architecture** illustrating Eva’s main components and 
 ```mermaid
 flowchart TB
     subgraph "Local Files"
-      A1[eva_personality.py] -->|Defines traits| Eva
-      A2[eva_tools.py] -->|Provides tools| Eva
-      A3[run.py - main] -->|Executes core logic| Eva
+      A1["eva_personality.py"] -->|Defines traits| Eva
+      A2["eva_tools.py"] -->|Provides tools| Eva
+      A3["run.py (Main)"] -->|Executes core logic| Eva
     end
 
     subgraph "ChromaDB"
-      B1[chat_memory] -->|Stores interactions| Eva
-      B2[eva_knowledge] -->|Holds persistent data| Eva
+      B1["chat_memory"] -->|Stores interactions| Eva
+      B2["eva_knowledge"] -->|Holds persistent data| Eva
     end
 
     subgraph "LLM"
-      C1[Deepseek-r1 (nexer-r1)] -->|Processes language| Eva
+      C1["Deepseek-r1 \n nexer-r1"] -->|Processes language| Eva
     end
 
     subgraph "Real World"
-      D1[Internet: Google, IP checks] -->|Fetches data| Eva
-      D2[System environment & commands] -->|Executes system tasks| Eva
+      D1["Internet (Google, IP checks)"] -->|Fetches data| Eva
+      D2["System environment & commands"] -->|Executes system tasks| Eva
     end
 
-    Eva[Eva AGI]
-    Eva -->|Reads & writes| Local Files
-    Eva -->|Queries & Stores| ChromaDB
-    Eva -->|Generates & Receives| LLM
-    Eva -->|Time, Weather, Web Search| Real World
+    Eva["Eva AGI"]
+    Eva -->|Reads & Writes| "Local Files"
+    Eva -->|Queries & Stores| "ChromaDB"
+    Eva -->|Generates & Receives| "LLM"
+    Eva -->|Time, Weather, Web Search| "Real World"
 ```
 
 ---
