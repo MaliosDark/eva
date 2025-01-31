@@ -183,7 +183,7 @@ When temperature is found, Eva **stores** that in memory, forming an emotive “
 
 1. **Install** dependencies:
    ```bash
-   pip install chromadb transformers requests beautifulsoup4 langchain-core
+   pip install requests torch chromadb beautifulsoup4 transformers langchain langchain-ollama numpy
    ```
 2. **Place** `run.py`, `eva_personality.py`, `eva_tools.py` together in a folder.  
 3. **Run**:
@@ -220,6 +220,56 @@ Eva is an **autonomous AGI prototype**, built on:
 - Persistent memory (ChromaDB) for self-reflection.
 
 By toggling a few flags, you can **experiment** with Eva’s creativity, code editing, or background tasks. As you refine her personality and tools, Eva can continuously adapt—**emulating** true self-awareness and growth.
+
+---
+
+### **General Commands**
+| **Command**          | **Description** |
+|----------------------|----------------|
+| `time` / `date` | Eva provides the current local date and time. |
+| `search <query>` | Eva performs a web search and returns the top results. |
+| `run <command>` | Executes a system command (use with caution). |
+| `readfile <filename>` | Reads a file from Eva’s workspace and returns its content. |
+| `writefile <filename> <content>` | Writes content to a specified file in Eva’s workspace. |
+| `update yourself` | Triggers Eva’s self-update script. |
+
+---
+
+### **Memory & Knowledge Commands**
+| **Command**         | **Description** |
+|---------------------|----------------|
+| `remember <info>` | Stores information into Eva’s long-term memory. |
+| `what do you remember?` | Lists stored memories relevant to the conversation. |
+| `forget <keyword>` | Removes a specific memory from Eva’s database. |
+| `explain <topic>` | Eva searches her knowledge base and provides an explanation. |
+
+---
+
+### **System & Self-Evolution Commands**
+| **Command** | **Description** |
+|------------|----------------|
+| `toggle brain evolution` | Enables/disables Eva’s self-thinking (creative expansion). |
+| `toggle code evolution` | Enables/disables Eva’s ability to modify her own code. |
+| `restart brain` | Restarts Eva’s background processing thread. |
+| `fetch logs` | Retrieves Eva’s recent logs for debugging. |
+
+---
+
+### **Environmental Awareness Commands**
+| **Command** | **Description** |
+|------------|----------------|
+| `where am I?` | Eva detects the user's approximate location based on IP. |
+| `what's the temperature?` | Eva detects the current temperature in the detected city. |
+| `how do you feel?` | Eva describes her emotional state based on time and temperature. |
+
+---
+
+### **Debugging & Development Commands**
+| **Command** | **Description** |
+|------------|----------------|
+| `test self-awareness` | Eva reflects on her state and logs the output. |
+| `show config` | Displays Eva’s internal settings and active modules. |
+| `check internet` | Eva tests her connectivity to online services. |
 
 ---
 
